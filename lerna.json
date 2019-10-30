@@ -1,0 +1,28 @@
+{
+  "lerna": "3.8.0",
+  "changelog": {
+    "repo": "cdmbase/lerna-bootstrap",
+    "labels": {
+      "tag: breaking change": ":boom: Breaking Change",
+      "tag: new feature": ":rocket: New Feature",
+      "tag: bug fix": ":bug: Bug Fix",
+      "tag: polish": ":nail_care: Polish",
+      "tag: documentation": "Documentation",
+      "tag: internal": ":house: Internal"
+    }
+  },
+  "command": {
+    "publish": {
+      "allowBranch": ["publish", "devpublish"]
+    },
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]      
+    }
+  },
+  "packages": [
+    "packages/*",
+    "servers/*",
+    "packages-modules/**"
+  ],
+  "version": "0.0.0"
+}
