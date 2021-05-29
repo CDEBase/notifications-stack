@@ -2184,6 +2184,33 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@notifications-stack/client-react@file:packages/notifications-client-react":
+  version "0.0.1"
+  dependencies:
+    "@notifications-stack/core" "file:packages/notifications-core"
+
+"@notifications-stack/core@file:packages/notifications-core":
+  version "0.0.1"
+
+"@notifications-stack/hemera-plugin@file:packages/notifications-hemera-plugin":
+  version "0.0.1"
+  dependencies:
+    "@notifications-stack/core" "file:packages/notifications-core"
+    "@notifications-stack/server-core" "file:packages/notifications-server-core"
+
+"@notifications-stack/notifications-api-browser@file:packages-modules/notifications-api/browser":
+  version "0.0.1"
+  dependencies:
+    antd "^3.16.6"
+
+"@notifications-stack/notifications-api-server@file:packages-modules/notifications-api/server":
+  version "0.0.1"
+
+"@notifications-stack/server-core@file:packages/notifications-server-core":
+  version "0.0.1"
+  dependencies:
+    "@notifications-stack/core" "file:packages/notifications-core"
+
 "@oclif/color@^0.0.0":
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/@oclif/color/-/color-0.0.0.tgz#54939bbd16d1387511bf1a48ccda1a417248e6a9"
@@ -2515,51 +2542,6 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
-
-"@sample-stack/client-react@file:packages/sample-client-react":
-  version "0.0.1"
-  dependencies:
-    "@sample-stack/client-state" "file:../../../../.cache/yarn/v4/npm-@sample-stack-client-react-0.0.1-e543e185-6f26-4ca2-99a4-ddd1675bd2d5-1572386670528/node_modules/@sample-stack/sample-client-state"
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-client-react-0.0.1-e543e185-6f26-4ca2-99a4-ddd1675bd2d5-1572386670528/node_modules/@sample-stack/sample-core"
-
-"@sample-stack/client-state@file:packages/sample-client-state":
-  version "0.0.1"
-  dependencies:
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-client-state-0.0.1-d199b4a0-771f-426d-8ef6-414568b40f8b-1572386670532/node_modules/@sample-stack/sample-core"
-
-"@sample-stack/core@file:packages/sample-core":
-  version "0.0.1"
-
-"@sample-stack/counter-module-browser@file:packages-modules/counter/browser":
-  version "0.0.1"
-  dependencies:
-    antd "^3.16.6"
-
-"@sample-stack/counter-module-server@file:packages-modules/counter/server":
-  version "0.0.1"
-
-"@sample-stack/hemera-plugin@file:packages/sample-hemera-plugin":
-  version "0.0.1"
-  dependencies:
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-hemera-plugin-0.0.1-2d35395f-90b9-4db3-b9fe-233bea2306a0-1572386676915/node_modules/@sample-stack/sample-core"
-    "@sample-stack/server-core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-hemera-plugin-0.0.1-2d35395f-90b9-4db3-b9fe-233bea2306a0-1572386676915/node_modules/@sample-stack/sample-server-core"
-
-"@sample-stack/microservice-nats@file:packages/sample-microservice-nats":
-  version "0.0.1"
-  dependencies:
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-microservice-nats-0.0.1-8ffea3d5-ece8-447a-a239-af88d774db3d-1572386676919/node_modules/@sample-stack/sample-core"
-    "@sample-stack/server-core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-microservice-nats-0.0.1-8ffea3d5-ece8-447a-a239-af88d774db3d-1572386676919/node_modules/@sample-stack/sample-server-core"
-
-"@sample-stack/server-core@file:packages/sample-server-core":
-  version "0.0.1"
-  dependencies:
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-server-core-0.0.1-c48a417a-dae3-4b3d-82fd-0d310614f2e9-1572386676917/node_modules/@sample-stack/sample-core"
-
-"@sample-stack/store@file:packages/sample-store":
-  version "0.0.1"
-  dependencies:
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-@sample-stack-store-0.0.1-5cf195c7-fad1-4757-99af-28e88ecfa619-1572386676922/node_modules/@sample-stack/sample-core"
-    sequelize "^5.7.6"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -3722,11 +3704,6 @@ any-observable@^0.3.0:
   resolved "https://registry.yarnpkg.com/any-observable/-/any-observable-0.3.0.tgz#af933475e5806a67d0d7df090dd5e8bef65d119b"
   integrity sha512-/FQM1EDkTsf63Ub2C6O7GuYFDsSXUwsaZDurV0np41ocwq0jthUAYCmhBX9f+KwlaCgIuWyr/4WlUQUBfKfZog==
 
-any-promise@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
-  integrity sha1-q8av7tzqUugJzcA3au0845Y10X8=
-
 anymatch@^1.3.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.2.tgz#553dcb8f91e3c889845dfdba34c77721b90b9d7a"
@@ -4467,7 +4444,7 @@ async-foreach@^0.1.3:
   resolved "https://registry.yarnpkg.com/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
   integrity sha1-NhIfhFwFeBct5Bmpfb6x0W7DRUI=
 
-async-limiter@^1.0.0, async-limiter@~1.0.0:
+async-limiter@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
@@ -4913,7 +4890,7 @@ bloomrun@4.1.x:
   dependencies:
     sorted-array-functions "^1.1.0"
 
-bluebird@^3.4.7, bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.4, bluebird@^3.5.5:
+bluebird@^3.4.7, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.4, bluebird@^3.5.5:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
@@ -5797,14 +5774,6 @@ clone@~2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
   integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
-
-cls-bluebird@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/cls-bluebird/-/cls-bluebird-2.1.0.tgz#37ef1e080a8ffb55c2f4164f536f1919e7968aee"
-  integrity sha1-N+8eCAqP+1XC9BZPU28ZGeeWiu4=
-  dependencies:
-    is-bluebird "^1.0.2"
-    shimmer "^1.1.0"
 
 cmd-shim@^2.0.2:
   version "2.1.0"
@@ -7395,11 +7364,6 @@ dotgitignore@^2.1.0:
   dependencies:
     find-up "^3.0.0"
     minimatch "^3.0.4"
-
-dottie@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/dottie/-/dottie-2.0.1.tgz#697ad9d72004db7574d21f892466a3c285893659"
-  integrity sha512-ch5OQgvGDK2u8pSZeSYAQaV/lczImd7pMJ7BcEPXmnFVjy4yJIzP6CsODJUTH8mg1tyH1Z2abOiuJO3DjZ/GBw==
 
 draft-js@^0.10.0, draft-js@~0.10.0:
   version "0.10.5"
@@ -10469,11 +10433,6 @@ inflected@^2.0.3:
   resolved "https://registry.yarnpkg.com/inflected/-/inflected-2.0.4.tgz#323770961ccbe992a98ea930512e9a82d3d3ef77"
   integrity sha512-HQPzFLTTUvwfeUH6RAGjD8cHS069mBqXG5n4qaxX7sJXBhVQrsGgF+0ZJGkSuN6a8pcUWB/GXStta11kKi/WvA==
 
-inflection@1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/inflection/-/inflection-1.12.0.tgz#a200935656d6f5f6bc4dc7502e1aecb703228416"
-  integrity sha1-ogCTVlbW9fa8TcdQLhrstwMihBY=
-
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -10705,11 +10664,6 @@ is-binary-path@~2.1.0:
   integrity sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
   dependencies:
     binary-extensions "^2.0.0"
-
-is-bluebird@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/is-bluebird/-/is-bluebird-1.0.2.tgz#096439060f4aa411abee19143a84d6a55346d6e2"
-  integrity sha1-CWQ5Bg9KpBGr7hkUOoTWpVNG1uI=
 
 is-boolean-object@^1.0.0:
   version "1.0.0"
@@ -13316,7 +13270,7 @@ module@^1.2.5:
     vinyl-fs "2.4.3"
     yargs "4.6.0"
 
-moment-timezone@^0.5.21, moment-timezone@^0.5.x:
+moment-timezone@^0.5.x:
   version "0.5.27"
   resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.27.tgz#73adec8139b6fe30452e78f210f27b1f346b8877"
   integrity sha512-EIKQs7h5sAsjhPCqN6ggx6cEbs94GK050254TIJySD1bzoM5JTYDwAU1IoVOeTOL6Gm27kYJ51/uuvq1kIlrbw==
@@ -13838,6 +13792,155 @@ normalize-url@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
+
+"notifications-stack-backend-server@file:servers/backend-server":
+  version "0.0.1"
+  dependencies:
+    "@cdm-logger/server" "^5.0.5"
+    "@common-stack/core" "0.0.203"
+    "@common-stack/server-core" "0.0.203"
+    "@notifications-stack/core" "file:packages/notifications-core"
+    "@notifications-stack/notifications-api-server" "file:packages-modules/notifications-api/server"
+    "@notifications-stack/server-core" "file:packages/notifications-server-core"
+    apollo-datasource-rest "^0.6.1"
+    apollo-errors "^1.9.0"
+    apollo-link "^1.2.12"
+    apollo-link-batch-http "^1.2.12"
+    apollo-link-context "^1.0.18"
+    apollo-link-error "^1.1.11"
+    apollo-link-http "^1.5.15"
+    apollo-link-ws "^1.0.18"
+    apollo-logger "^0.3.2"
+    apollo-server-core "^2.4.8"
+    apollo-server-express "^2.4.8"
+    app-root-path "^2.2.1"
+    body-parser "^1.19.0"
+    cors "^2.8.5"
+    dotenv "^7.0.0"
+    envalid "^5.0.0"
+    esm "^3.2.22"
+    express "^4.16.4"
+    graphql "^14.2.1"
+    graphql-nats-subscriptions "^1.3.0"
+    graphql-subscriptions "^1.1.0"
+    graphql-tools "^4.0.4"
+    graphql-type-json "^0.3.0"
+    hemera-plugin "2.0.1"
+    inversify "^5.0.1"
+    isomorphic-fetch "^2.2.1"
+    knex "^0.16.5"
+    lodash "^4.17.11"
+    morgan "^1.9.1"
+    nats "^1.2.10"
+    nats-hemera "^7.0.1"
+    reflect-metadata "^0.1.13"
+    rxjs "^6.5.1"
+    rxjs-compat "^6.5.1"
+    subscriptions-transport-ws "0.9.15"
+    universal-cookie-express "^3.1.0"
+    ws "^7.4.6"
+
+"notifications-stack-frontend-server@file:servers/frontend-server":
+  version "0.0.1"
+  dependencies:
+    "@cdm-logger/client" "^5.0.7"
+    "@cdm-logger/server" "^5.0.5"
+    "@common-stack/client-core" "0.0.203"
+    "@common-stack/client-react" "0.0.203"
+    "@common-stack/client-redux" "0.0.203"
+    "@common-stack/core" "0.0.203"
+    "@common-stack/server-core" "0.0.203"
+    "@notifications-stack/client-react" "file:packages/notifications-client-react"
+    "@notifications-stack/core" "file:packages/notifications-core"
+    "@notifications-stack/notifications-api-browser" "file:packages-modules/notifications-api/browser"
+    apollo-cache-inmemory "^1.6.3"
+    apollo-client "^2.6.4"
+    apollo-fetch "^0.7.0"
+    apollo-link "^1.2.12"
+    apollo-link-batch-http "^1.2.12"
+    apollo-link-context "^1.0.18"
+    apollo-link-debounce "^2.1.0"
+    apollo-link-error "^1.1.11"
+    apollo-link-http "^1.5.15"
+    apollo-link-logger "^1.2.3"
+    apollo-link-retry "^2.2.14"
+    apollo-link-schema "^1.2.3"
+    apollo-link-ws "^1.0.18"
+    apollo-logger "^0.3.2"
+    browser-bunyan "^1.5.3"
+    bunyan "^1.8.12"
+    classnames "^2.2.6"
+    connected-react-router "^6.4.0"
+    cors "^2.8.5"
+    dotenv "^7.0.0"
+    envalid "^5.0.0"
+    error-stack-parser "^2.0.2"
+    esm "^3.2.22"
+    fela "10.2.4"
+    fela-beautifier "^10.2.4"
+    fela-dom "10.2.4"
+    fela-font-renderer "^5.0.25"
+    fela-perf "^10.2.4"
+    fela-plugin-fallback-value "^10.2.4"
+    fela-plugin-logger "^10.2.4"
+    fela-plugin-lvha "^5.0.16"
+    fela-plugin-prefixer "^10.2.4"
+    fela-plugin-unit "^10.2.4"
+    fela-plugin-validator "^10.2.4"
+    fela-preset-web "^10.2.4"
+    graphql "^14.2.1"
+    graphql-tag "^2.10.1"
+    history "^4.9.0"
+    immutability-helper "^3.0.0"
+    inversify "^5.0.1"
+    isomorphic-fetch "^2.2.1"
+    js-cookie "^2.2.0"
+    lodash "^4.17.11"
+    ramda "^0.26.1"
+    react "^16.8.6"
+    react-apollo "^3.0.0"
+    react-dom "^16.8.6"
+    react-fela "10.2.4"
+    react-helmet "^5.2.0"
+    react-loadable "^5.5.0"
+    react-redux "^7.0.3"
+    react-resizable "^1.7.5"
+    react-router "^5.0.0"
+    react-router-config "^5.0.0"
+    react-router-dom "^5.0.0"
+    react-router-redux "^5.0.0-alpha.8"
+    react-transition-group "^4.0.0"
+    redux "^4.0.1"
+    redux-logger "^3.0.6"
+    redux-observable "^1.1.0"
+    redux-persist "^5.10.0"
+    redux-thunk "^2.3.0"
+    reselect "^4.0.0"
+    serialize-javascript "^1.7.0"
+    sourcemapped-stacktrace "^1.1.9"
+    subscriptions-transport-ws "0.9.15"
+    universal-cookie-express "^3.1.0"
+
+"notifications-stack-hemera-server@file:servers/hemera-server":
+  version "0.0.1"
+  dependencies:
+    "@cdm-logger/server" "^5.0.5"
+    "@notifications-stack/core" "file:packages/notifications-core"
+    "@notifications-stack/hemera-plugin" "file:packages/notifications-hemera-plugin"
+    "@notifications-stack/server-core" "file:packages/notifications-server-core"
+    dotenv "^7.0.0"
+    envalid "^5.0.0"
+    graphql-nats-subscriptions "^1.3.0"
+    helmet "^3.16.0"
+    hemera-joi "^6.0.1"
+    hemera-plugin "2.0.1"
+    hemera-safe-promises "^4.0.1"
+    hemera-sql-store "^7.0.0"
+    hemera-zipkin "^6.0.5"
+    inversify "^5.0.1"
+    nats "^1.2.10"
+    nats-hemera "^7.0.1"
+    reflect-metadata "^0.1.13"
 
 npm-bundled@^1.0.1:
   version "1.0.6"
@@ -17003,13 +17106,6 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
-retry-as-promised@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/retry-as-promised/-/retry-as-promised-3.2.0.tgz#769f63d536bec4783549db0777cb56dadd9d8543"
-  integrity sha512-CybGs60B7oYU/qSQ6kuaFmRd9sTZ6oXSc0toqePvV74Ac6/IFZSI1ReFQmtCN+uvW1Mtqdwpvt/LGOiCBAY2Mg==
-  dependencies:
-    any-promise "^1.3.0"
-
 retry@0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.12.0.tgz#1b42a6266a21f07421d1b0b54b7dc167b01c013b"
@@ -17155,158 +17251,6 @@ safe-regex@^1.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-
-"sample-stack-backend-server@file:servers/backend-server":
-  version "0.0.1"
-  dependencies:
-    "@cdm-logger/server" "^5.0.5"
-    "@common-stack/core" "0.0.203"
-    "@common-stack/server-core" "0.0.203"
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-sample-stack-backend-server-0.0.1-af625ddb-5a4d-4efe-85f5-22450b5e7b85-1572386678679/packages/sample-core"
-    "@sample-stack/counter-module-server" "file:../../../../.cache/yarn/v4/npm-sample-stack-backend-server-0.0.1-af625ddb-5a4d-4efe-85f5-22450b5e7b85-1572386678679/packages-modules/counter/server"
-    "@sample-stack/microservice-nats" "file:../../../../.cache/yarn/v4/npm-sample-stack-backend-server-0.0.1-af625ddb-5a4d-4efe-85f5-22450b5e7b85-1572386678679/packages/sample-microservice-nats"
-    "@sample-stack/server-core" "file:../../../../.cache/yarn/v4/npm-sample-stack-backend-server-0.0.1-af625ddb-5a4d-4efe-85f5-22450b5e7b85-1572386678679/packages/sample-server-core"
-    "@sample-stack/store" "file:../../../../.cache/yarn/v4/npm-sample-stack-backend-server-0.0.1-af625ddb-5a4d-4efe-85f5-22450b5e7b85-1572386678679/packages/sample-store"
-    apollo-datasource-rest "^0.6.1"
-    apollo-errors "^1.9.0"
-    apollo-link "^1.2.12"
-    apollo-link-batch-http "^1.2.12"
-    apollo-link-context "^1.0.18"
-    apollo-link-error "^1.1.11"
-    apollo-link-http "^1.5.15"
-    apollo-link-ws "^1.0.18"
-    apollo-logger "^0.3.2"
-    apollo-server-core "^2.4.8"
-    apollo-server-express "^2.4.8"
-    app-root-path "^2.2.1"
-    body-parser "^1.19.0"
-    cors "^2.8.5"
-    dotenv "^7.0.0"
-    envalid "^5.0.0"
-    esm "^3.2.22"
-    express "^4.16.4"
-    graphql "^14.2.1"
-    graphql-nats-subscriptions "^1.3.0"
-    graphql-subscriptions "^1.1.0"
-    graphql-tools "^4.0.4"
-    graphql-type-json "^0.3.0"
-    hemera-plugin "2.0.1"
-    inversify "^5.0.1"
-    isomorphic-fetch "^2.2.1"
-    knex "^0.16.5"
-    lodash "^4.17.11"
-    morgan "^1.9.1"
-    nats "^1.2.10"
-    nats-hemera "^7.0.1"
-    reflect-metadata "^0.1.13"
-    rxjs "^6.5.1"
-    rxjs-compat "^6.5.1"
-    subscriptions-transport-ws "0.9.15"
-    universal-cookie-express "^3.1.0"
-    ws "^6.2.1"
-
-"sample-stack-frontend-server@file:servers/frontend-server":
-  version "0.0.1"
-  dependencies:
-    "@cdm-logger/client" "^5.0.7"
-    "@cdm-logger/server" "^5.0.5"
-    "@common-stack/client-core" "0.0.203"
-    "@common-stack/client-react" "0.0.203"
-    "@common-stack/client-redux" "0.0.203"
-    "@common-stack/core" "0.0.203"
-    "@common-stack/server-core" "0.0.203"
-    "@sample-stack/client-react" "file:../../../../.cache/yarn/v4/npm-sample-stack-frontend-server-0.0.1-19ad7dd0-d4e0-4430-a775-216dc90aae73-1572386685666/packages/sample-client-react"
-    "@sample-stack/client-state" "file:../../../../.cache/yarn/v4/npm-sample-stack-frontend-server-0.0.1-19ad7dd0-d4e0-4430-a775-216dc90aae73-1572386685666/packages/sample-client-state"
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-sample-stack-frontend-server-0.0.1-19ad7dd0-d4e0-4430-a775-216dc90aae73-1572386685666/packages/sample-core"
-    "@sample-stack/counter-module-browser" "file:../../../../.cache/yarn/v4/npm-sample-stack-frontend-server-0.0.1-19ad7dd0-d4e0-4430-a775-216dc90aae73-1572386685666/packages-modules/counter/browser"
-    apollo-cache-inmemory "^1.6.3"
-    apollo-client "^2.6.4"
-    apollo-fetch "^0.7.0"
-    apollo-link "^1.2.12"
-    apollo-link-batch-http "^1.2.12"
-    apollo-link-context "^1.0.18"
-    apollo-link-debounce "^2.1.0"
-    apollo-link-error "^1.1.11"
-    apollo-link-http "^1.5.15"
-    apollo-link-logger "^1.2.3"
-    apollo-link-retry "^2.2.14"
-    apollo-link-schema "^1.2.3"
-    apollo-link-ws "^1.0.18"
-    apollo-logger "^0.3.2"
-    browser-bunyan "^1.5.3"
-    bunyan "^1.8.12"
-    classnames "^2.2.6"
-    connected-react-router "^6.4.0"
-    cors "^2.8.5"
-    dotenv "^7.0.0"
-    envalid "^5.0.0"
-    error-stack-parser "^2.0.2"
-    esm "^3.2.22"
-    fela "10.2.4"
-    fela-beautifier "^10.2.4"
-    fela-dom "10.2.4"
-    fela-font-renderer "^5.0.25"
-    fela-perf "^10.2.4"
-    fela-plugin-fallback-value "^10.2.4"
-    fela-plugin-logger "^10.2.4"
-    fela-plugin-lvha "^5.0.16"
-    fela-plugin-prefixer "^10.2.4"
-    fela-plugin-unit "^10.2.4"
-    fela-plugin-validator "^10.2.4"
-    fela-preset-web "^10.2.4"
-    graphql "^14.2.1"
-    graphql-tag "^2.10.1"
-    history "^4.9.0"
-    immutability-helper "^3.0.0"
-    inversify "^5.0.1"
-    isomorphic-fetch "^2.2.1"
-    js-cookie "^2.2.0"
-    lodash "^4.17.11"
-    ramda "^0.26.1"
-    react "^16.8.6"
-    react-apollo "^3.0.0"
-    react-dom "^16.8.6"
-    react-fela "10.2.4"
-    react-helmet "^5.2.0"
-    react-loadable "^5.5.0"
-    react-redux "^7.0.3"
-    react-resizable "^1.7.5"
-    react-router "^5.0.0"
-    react-router-config "^5.0.0"
-    react-router-dom "^5.0.0"
-    react-router-redux "^5.0.0-alpha.8"
-    react-transition-group "^4.0.0"
-    redux "^4.0.1"
-    redux-logger "^3.0.6"
-    redux-observable "^1.1.0"
-    redux-persist "^5.10.0"
-    redux-thunk "^2.3.0"
-    reselect "^4.0.0"
-    serialize-javascript "^1.7.0"
-    sourcemapped-stacktrace "^1.1.9"
-    subscriptions-transport-ws "0.9.15"
-    universal-cookie-express "^3.1.0"
-
-"sample-stack-hemera-server@file:servers/hemera-server":
-  version "0.0.1"
-  dependencies:
-    "@cdm-logger/server" "^5.0.5"
-    "@sample-stack/core" "file:../../../../.cache/yarn/v4/npm-sample-stack-hemera-server-0.0.1-359d9c28-6488-404e-8a27-84fd2641d612-1572386693599/packages/sample-core"
-    "@sample-stack/hemera-plugin" "file:../../../../.cache/yarn/v4/npm-sample-stack-hemera-server-0.0.1-359d9c28-6488-404e-8a27-84fd2641d612-1572386693599/packages/sample-hemera-plugin"
-    "@sample-stack/server-core" "file:../../../../.cache/yarn/v4/npm-sample-stack-hemera-server-0.0.1-359d9c28-6488-404e-8a27-84fd2641d612-1572386693599/packages/sample-server-core"
-    dotenv "^7.0.0"
-    envalid "^5.0.0"
-    graphql-nats-subscriptions "^1.3.0"
-    helmet "^3.16.0"
-    hemera-joi "^6.0.1"
-    hemera-plugin "2.0.1"
-    hemera-safe-promises "^4.0.1"
-    hemera-sql-store "^7.0.0"
-    hemera-zipkin "^6.0.5"
-    inversify "^5.0.1"
-    nats "^1.2.10"
-    nats-hemera "^7.0.1"
-    reflect-metadata "^0.1.13"
 
 sane@^4.0.3:
   version "4.1.0"
@@ -17477,32 +17421,6 @@ sentence-case@^2.1.0:
   dependencies:
     no-case "^2.2.0"
     upper-case-first "^1.1.2"
-
-sequelize-pool@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/sequelize-pool/-/sequelize-pool-2.3.0.tgz#64f1fe8744228172c474f530604b6133be64993d"
-  integrity sha512-Ibz08vnXvkZ8LJTiUOxRcj1Ckdn7qafNZ2t59jYHMX1VIebTAOYefWdRYFt6z6+hy52WGthAHAoLc9hvk3onqA==
-
-sequelize@^5.7.6:
-  version "5.21.2"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.21.2.tgz#0daeee9bef37d49490b72a2c6891d53044f65a18"
-  integrity sha512-MEqJ9NwQi4oy/ylLb2WkfPmhki/BOXC/gJfc8uWUUTETcpLwD1y/5bI1kqVh+qWcECHNsE9G4lmhj5hFbsxqvA==
-  dependencies:
-    bluebird "^3.5.0"
-    cls-bluebird "^2.1.0"
-    debug "^4.1.1"
-    dottie "^2.0.0"
-    inflection "1.12.0"
-    lodash "^4.17.15"
-    moment "^2.24.0"
-    moment-timezone "^0.5.21"
-    retry-as-promised "^3.2.0"
-    semver "^6.3.0"
-    sequelize-pool "^2.3.0"
-    toposort-class "^1.0.1"
-    uuid "^3.3.3"
-    validator "^10.11.0"
-    wkx "^0.4.8"
 
 serialize-javascript@^1.7.0:
   version "1.9.1"
@@ -18765,11 +18683,6 @@ topo@2.x.x:
   dependencies:
     hoek "4.x.x"
 
-toposort-class@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/toposort-class/-/toposort-class-1.0.1.tgz#7ffd1f78c8be28c3ba45cd4e1a3f5ee193bd9988"
-  integrity sha1-f/0feMi+KMO6Rc1OGj9e4ZO9mYg=
-
 toposort@^1.0.0:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/toposort/-/toposort-1.0.7.tgz#2e68442d9f64ec720b8cc89e6443ac6caa950029"
@@ -19420,7 +19333,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.0.1, uuid@^3.1.0, uuid@^3.2.1, uuid@^3.3.2, uuid@^3.3.3:
+uuid@^3.0.1, uuid@^3.1.0, uuid@^3.2.1, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
@@ -19970,13 +19883,6 @@ winston@^2.3.1:
     isstream "0.1.x"
     stack-trace "0.0.x"
 
-wkx@^0.4.8:
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/wkx/-/wkx-0.4.8.tgz#a092cf088d112683fdc7182fd31493b2c5820003"
-  integrity sha512-ikPXMM9IR/gy/LwiOSqWlSL3X/J5uk9EO2hHNRXS41eTLXaUFEVw9fn/593jW/tE5tedNg8YjT5HkCa4FqQZyQ==
-  dependencies:
-    "@types/node" "*"
-
 wordwrap@^1.0.0, wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
@@ -20102,19 +20008,17 @@ ws@^5.1.0, ws@^5.2.0:
   dependencies:
     async-limiter "~1.0.0"
 
-ws@^6.0.0, ws@^6.2.1:
+ws@^6.0.0:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
   integrity sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
   dependencies:
     async-limiter "~1.0.0"
 
-ws@^7.0.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.2.0.tgz#422eda8c02a4b5dba7744ba66eebbd84bcef0ec7"
-  integrity sha512-+SqNqFbwTm/0DC18KYzIsMTnEWpLwJsiasW/O17la4iDRRIO9uaHbvKiAS3AHgTiuuWerK/brj4O6MYZkei9xg==
-  dependencies:
-    async-limiter "^1.0.0"
+ws@^7.0.0, ws@^7.4.6:
+  version "7.4.6"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.6.tgz#5654ca8ecdeee47c33a9a4bf6d28e2be2980377c"
+  integrity sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
 
 x-xss-protection@1.3.0:
   version "1.3.0"
